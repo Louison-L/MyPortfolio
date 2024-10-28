@@ -5,15 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Louis-Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
 
 <!--=======scroll to top button =======-->
 
+<div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
 
 
 <!--=======Light/Dark theme button =======-->
+
+<div class="theme-btn flex-center">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+</div>
 
 
 
@@ -24,7 +34,7 @@
         <a href="#" class="logo">Louison</a>
         <div class="navigation">
             <div class="nav-items">
-                <a href="#home">Home</a>
+                <a class="active" href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
@@ -72,7 +82,7 @@
         <div class="about-info">
             <div class="description">
                 <h3>I'm Louison</h3>
-                <h4>A Lead<span>Frond-End Developer</span> based in <span>Kigali</span> </h4>
+                <h4>A Lead <span>Frond-End Developer</span> based in <span>Kigali</span> </h4>
                 <p>I design and develop services for customers specializing creating stylish,
                     modern websites,webservices and online
                     stores.My passion is to design digital user experiences through meaningful
@@ -363,37 +373,122 @@
     </div>
 </section>
 
-<!--=======Portfolio section =======-->
-<section class="portfolio section" id="portfolio">
+
+<
+      
+<!--=======Get-in-touch section =======-->
+<div class="get-in-touch sub-section">
+    <div class="container">
+        <div class="content flex-center">
+            <div class="contact-card flex-center">
+                <div class="title">
+                    <h4>Let's Talk</h4>
+                    <h3>About Your</h3>
+                    <h2>Next Project</h2>
+                </div>
+                <div class="contact-btn">
+                    <a href="" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--======= Contact section =======-->
+<section class="contact section" id="contact">
     <div class="container flex-center">
-        <h1 class="section-title-01">Portfolio</h1>
-        <h2 class="section-title-02">Portfolio</h2>
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
         <div class="content">
-            <div class="portfolio-list">
-                
+            <div class="contact-left">
+                <h2>Let's discuss your project</h2>
+                <ul>
+                    <li class="contact-list">
+                        <h3 class="item-title">
+                            <i class="fas fa-phone"></i>Phone
+                        </h3>
+                        <span>+00 123-777-9999</span>
+                    </li>
+                    <li class="contact-list">
+                        <h3 class="item-title">
+                            <i class="fas fa-envelope"></i>Email Address
+                        </h3>
+                        <span>
+                            <a href="mailto:louisonlomboto2000@gmail.com">louisonlomboto2000@gmail.com</a>
+                        </span>
+                    </li>
+                    <li class="contact-list">
+                        <h3 class="item-title">
+                            <i class="fas fa-map-marker-alt"></i>Official Address
+                        </h3>
+                        <span>KK89 Kanombe Ave. Kigali, Rwanda, RW</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <p>
+                    I'm always open to discussing product<br> 
+                    <span>design work or partnerships.</span>
+                </p>
+                <form action="" class="contact-form">
+                    <div class="first-row">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="second-row">
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="third-row">
+                        <textarea name="message" rows="7" placeholder="Message" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">
+                        Send Message 
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
-
-
-
-
-<!--=======Get-in-touch section =======-->
-
-
-
-
-
-<!--======= Our clients =======-->
-
-
-<!--======= Contact section =======-->
-
-
 <!--======= Footer =======-->
-
+<footer>
+    <div class="footer-container">
+        <div class="about group">
+            <h2>Louison</h2>
+            <p>UI/UX Designer</p>
+            <a href="#about">About Me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+            <h3>More</h3>
+            <ul>
+                <li><a href="skills">Skills</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact"></a></li>
+                
+            </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+            <h3>Follow</h3>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="footer-copyright group">
+        <p>2021 by coding slow. All right reserved.</p>
+    </div>
+</footer>
 
 <!--======= External scripts =======-->
 
